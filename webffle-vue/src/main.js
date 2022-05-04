@@ -1,10 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-// Navigation
-import navWebffle from './components/nav-webffle'
-createApp(App).use(i18n).component(navWebffle.name, navWebffle)
-
 // Main Slider
 import MainSlider from './components/slider-section'
 import i18n from './i18n'
