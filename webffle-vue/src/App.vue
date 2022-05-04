@@ -31,6 +31,8 @@
   </nav>
   <!-- main slider -->
   <main-slider></main-slider>
+  <!-- main subinfo -->
+  <main-sub-info></main-sub-info>
   <!-- Footer -->
   <footer-webffle></footer-webffle>
 </template>
@@ -38,12 +40,14 @@
 <script>
 import MainSlider from './components/slider-section.vue'
 import FooterWebffle from './components/footer.vue'
+import mainSubInfo from './components/main-subinfo.vue'
 
 export default {
   name: 'App',
   components: {
     MainSlider,
     FooterWebffle,
+    mainSubInfo,
   },
   data() {
     return {

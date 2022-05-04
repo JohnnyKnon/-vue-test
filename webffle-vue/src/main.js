@@ -11,7 +11,8 @@ createApp(App).use(i18n).component(MainSlider.name, MainSlider)
 import Footer from './components/footer.vue'
 createApp(App).use(i18n).component(Footer.name, Footer)
 
-
+import mainSubInfo from './components/main-subinfo.vue'
+createApp(App).use(i18n).component(mainSubInfo.name, mainSubInfo)
 
 
 

@@ -5,6 +5,33 @@
     "descriptionTwo": "Drop by webffle and order the web like you're buying waffles.",
     "descriptionThree": " Webffle is a new possibility.",
 
-    "address": "1F 111, technopark E, 700, Pangyo-ro, Bundang-gu, Seongnam-si, Gyeonggi-do"
+    "address": "1F 111, technopark E, 700, Pangyo-ro, Bundang-gu, Seongnam-si, Gyeonggi-do",
+
+    "category":[
+      "News","Dev info","Design","Inquiry of partnership"
+    ],
+
+    "subinfoBold":[
+      "Notice & Events", 
+      "Development Info", 
+      "Design Request", 
+      "PartnerShip"
+  ],
+
+  "subinfo":[
+      "You can check out the announcement and the event at the link at the bottom.",
+      "For more information, visit the site at the bottom",
+      "This is a data room where you study with webffle.",
+      "If you come to the notion link at the bottom, you can check various information and developer news.",
+      "MiyaDesignHouse with Webffle",
+      "marketing design, UI design, exhibition design, etc",
+      "For more information, visit the website at the bottom",
+      "In conjunction with Webple, high-quality IT service production in Korea(foreign).",
+      "Educate Korean(foreigner) talent and provide safe HR services,",
+      "Link to other Asian countries and to Korea from other Asian countries"
+  ],
+  "subinfoBtn":[
+      "Go to site", "Go to notion", "Go to site", "Go to site"
+  ]
   }
 }
