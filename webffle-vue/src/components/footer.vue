@@ -70,7 +70,7 @@ export default{
         /* padding */
         padding-bottom: 20px;
         /* border */
-        border-bottom: 1px solid var(--color-dark-grey);
+        border-bottom: 1px solid var(--color-light-grey);
         /* flex */
         display: flex;
         flex-direction: column;

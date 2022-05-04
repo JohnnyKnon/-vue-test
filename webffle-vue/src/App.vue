@@ -89,6 +89,7 @@ export default {
     --color-text: #524438;
     --color-highlight: #00D4B5;
     --color-dark-highlight: #009B81;
+    --color-light-grey: rgb(201, 200, 200);
     --color-dark-grey: rgb(84, 84, 84);
     --color-black: #000;
     --color-white: #fff;
