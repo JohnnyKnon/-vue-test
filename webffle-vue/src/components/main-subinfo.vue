@@ -28,6 +28,7 @@
         >{{ $t('message.subinfoBtn[1]') }} <i class="fas fa-angle-right"></i
       ></a>
     </div>
+    
     <!-- design -->
     <div class="desgin">
       <div class="subinfo-info-wrap">
@@ -78,7 +79,7 @@ export default {
 <style>
 #subinfo {
   /* max-width */
-  max-width: 1400px;
+  max-width: 1450px;
   /* size */
   width: 90%;
   /* margin */
@@ -93,8 +94,8 @@ export default {
 }
 #subinfo > div {
   /* size */
-  width: 350px;
-  height: 300px;
+  width: 25%;
+  height: 260px;
   /* padding */
   padding: 30px;
   /* flex */
@@ -143,25 +144,10 @@ export default {
   /* border */
   border-bottom: 1px solid var(--color-dark-highlight);
 }
-
-/* Responsive */
-@media screen and (max-width: 1555px) {
-  #subinfo > div {
-    /* size */
-    width: 310px;
-    height: 300px;
-  }
-  .subinfo-info-wrap > p {
-  /* font */
-  font-size: 0.7rem;
-  }
-}
 /* Responsive */
 @media screen and (max-width: 1377px) and (min-width:978px)  {
    #subinfo > div {
-    /* size */
-    width: 280px;
-    height: 300px;
+    height: 310px;
   }
   .subinfo-info-wrap > h1 {
   /* font */
@@ -185,25 +171,7 @@ export default {
     border-left: 1px solid var(--scd-bg-color);
   }
 }
-@media screen and (max-width: 1244px) and (min-width:978px) {
-   #subinfo > div {
-    /* size */
-    width: 220px;
-  }
-  .subinfo-info-wrap > h1 {
-  /* font */
-  font-size: 0.8rem;
 
-}
-  .subinfo-info-wrap > p > span {
-    /* font */
-    font-size: 1.1rem;
-  }
-  .subinfo-info-wrap > p {
-    /* font */
-    font-size: 0.68rem;
-  }
-}
 
 @media screen and (max-width: 977px) {
   #subinfo > div {
@@ -216,4 +184,5 @@ export default {
     border-bottom: 1px solid var(--scd-bg-color);
   }
 }
+
 </style>

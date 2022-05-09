@@ -67,7 +67,7 @@ export default {
   /* max-width */
   max-width: 1400px;
   /* size */
-  width: 90%;
+  width: 85%;
   /* padding */
   padding-bottom: 120px;
 }
@@ -83,6 +83,8 @@ export default {
 .main-text-description {
   /* font */
   font-size: 1rem;
+  /* text */
+  line-height: 24px;
   /* padding */
   padding-top: 10px;
 }
@@ -98,7 +100,7 @@ export default {
     height: 600px;
   }
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 768px) {
   .main-text-title {
     /* font */
     font-size: 1.2rem;

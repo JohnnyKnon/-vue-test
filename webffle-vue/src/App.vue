@@ -18,9 +18,17 @@
      <div class="darkscreen-off" :class="{isDarkScreenOn: isToggleActive,}"></div>
      <section class="nav-cotents-wrap" :class="{ isToggleActive: isToggleActive,}">
          <ul class="nav-items-wrap">
-             <li class="nav-item" 
-             v-for="(items, i) in navItems" :key="i">
-                <a class="navItems[i]">{{navItems[i]}}</a>
+             <li class="nav-item">
+                <a class="top">Top</a>
+             </li>  
+             <li class="nav-item">
+                <a class="service">Service</a>
+             </li>  
+             <li class="nav-item">
+                <a class="contact">Contact Us</a>
+             </li>  
+             <li class="nav-item">
+                <a class="develop">Develop</a>
              </li>  
          </ul>
          <span class="nav-copy">Copyright &copy; webffle 2022</span>
@@ -33,6 +41,8 @@
   <main-slider></main-slider>
   <!-- main subinfo -->
   <main-sub-info></main-sub-info>
+  <!-- main intro -->
+  <main-intro></main-intro>
   <!-- Footer -->
   <footer-webffle></footer-webffle>
 </template>
@@ -41,6 +51,7 @@
 import MainSlider from './components/slider-section.vue'
 import FooterWebffle from './components/footer.vue'
 import mainSubInfo from './components/main-subinfo.vue'
+import mainIntro from './components/main-intro.vue'
 
 export default {
   name: 'App',
@@ -48,11 +59,11 @@ export default {
     MainSlider,
     FooterWebffle,
     mainSubInfo,
+    mainIntro
   },
   data() {
     return {
           isToggleActive: false,
-          navItems: ['Top' , 'Service', 'Contact Us' , 'Develop'],
           isLanguageActive: [true, false, false],
     }
   },
@@ -86,6 +97,7 @@ export default {
     --main-color: #FF9B00;
     --bg-color: #FFF7ED;
     --scd-bg-color: #DFE0DF;
+    --third-bg-color: #A6A9B0;
     --color-text: #524438;
     --color-highlight: #00D4B5;
     --color-dark-highlight: #009B81;

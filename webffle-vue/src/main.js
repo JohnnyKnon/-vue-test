@@ -14,6 +14,9 @@ createApp(App).use(i18n).component(Footer.name, Footer)
 import mainSubInfo from './components/main-subinfo.vue'
 createApp(App).use(i18n).component(mainSubInfo.name, mainSubInfo)
 
+import mainIntro from './components/main-intro.vue'
+createApp(App).use(i18n).component(mainIntro.name, mainIntro)
+
 
 
 createApp(App).use(i18n).mount('#app')
