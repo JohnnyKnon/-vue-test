@@ -3,22 +3,46 @@
        <div class="main-intro-wrap">
            <!-- svg image -->
            <img class="light" src="../../public/images/svg/light.svg" />
-           <h1 class="main-intro-title"><span class="main-intro-important">{{ $t('message.mainIntroTitle[0]') }}</span><br/>{{ $t('message.mainIntroTitle[1]') }}</h1>
-           <p class="main-intro-description">
+           <h1 class="main-intro-title" 
+           data-aos="fade-down"
+           data-aos-duration="1500"
+           data-aos-easing="ease-in-out"      
+           ><span class="main-intro-important">{{ $t('message.mainIntroTitle[0]') }}</span><br/>{{ $t('message.mainIntroTitle[1]') }}</h1>
+           <p class="main-intro-description" 
+           data-aos="fade-down"
+           data-aos-duration="1500"
+           data-aos-delay="300"
+           data-aos-easing="ease-in-out"
+           >
                {{ $t('message.mainIntroDescription') }}
            </p>
            <div class="main-intro-type">
-               <section class="intro-type-box edu">
+               <section class="intro-type-box edu"
+               data-aos="fade-up"
+               data-aos-duration="1500"
+               data-aos-delay="500"
+               data-aos-easing="ease-in-out"
+               >
                    <i class="fas fa-book-reader"></i>
                    <h2>{{ $t('message.mainIntroType[0]') }}</h2>
                    <p>{{ $t('message.mainIntroTypeDescription[0]') }}</p>
                </section>
-               <section class="intro-type-box btb-kr">
+               <section class="intro-type-box btb-kr"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-delay="500"
+                data-aos-easing="ease-in-out"
+               >
                   <i class="fas fa-user-tie"></i>
                   <h2>{{ $t('message.mainIntroType[1]') }}</h2>
                   <p>{{ $t('message.mainIntroTypeDescription[1]') }}</p>
                </section>
-               <section class="intro-type-box btb-asia">
+               <section class="intro-type-box btb-asia"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-delay="500"
+                data-aos-easing="ease-in-out"
+               >
                    <i class="fas fa-globe-asia"></i>
                   <h2>{{ $t('message.mainIntroType[2]') }}</h2>
                   <p>{{ $t('message.mainIntroTypeDescription[2]') }}</p>
@@ -39,7 +63,10 @@ export default{
     },
     components:{
 
-    }
+    },
+    methods: {
+         
+    },
 }
 </script>
 
@@ -47,7 +74,7 @@ export default{
 
     #main-intro{
         /* padding */
-        padding: 50px 0;
+        padding: 40px 0;
         /* background */
         background-color: var(--scd-bg-color);
     }
@@ -67,24 +94,24 @@ export default{
     /* svg img */
     .light{
         /* size */
-        width: 200px;
+        width: 240px;
     }
 
     .main-intro-important{
         /* font */
-        font-size: 2.8rem;
+        font-size: 2.5rem;
         color: var(--main-color);
     }
 
     .main-intro-title{
         /* font */
         font-family: var(--font-kr);
-        font-size: 1.8rem;
+        font-size: 1.2rem;
         color: var(--color-dark-grey);
         /* text */
         text-align: center;
         /* padding */
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }
 
     .main-intro-description{
@@ -95,7 +122,7 @@ export default{
         /* text */
         text-align: center;
         /* size */
-        width: 335px;
+        width: 90%;
         /* padding */
         padding: 0 10px;
     }
@@ -103,13 +130,14 @@ export default{
 
     .main-intro-type{
         /* padding */
-        padding-top: 30px;
+        padding-top: 50px;
+        padding-bottom: 55px;
         /* flex */
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 35px;
     }
 
     .intro-type-box{
@@ -118,9 +146,9 @@ export default{
         /* padding */
         padding: 20px;
         /* size */
-        width: 255px; height: 255px;
+        width: 260px; height: 260px;
         /* border */
-        border: 4px solid var(--color-dark-highlight);
+        border: 5px solid var(--color-dark-highlight);
         border-radius: 50%;
         /* flex */
         display: flex;
@@ -150,7 +178,7 @@ export default{
          /* text */
          text-align: center;
          /* padding */
-         padding: 0 10px;
+         padding: 0 11px;
      }
 
     

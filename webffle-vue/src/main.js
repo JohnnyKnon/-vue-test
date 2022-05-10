@@ -17,6 +17,7 @@ createApp(App).use(i18n).component(mainSubInfo.name, mainSubInfo)
 import mainIntro from './components/main-intro.vue'
 createApp(App).use(i18n).component(mainIntro.name, mainIntro)
 
-
+import mainOthers from './components/main-otherpages'
+createApp(App).use(i18n).component(mainOthers.name, mainOthers)
 
 createApp(App).use(i18n).mount('#app')

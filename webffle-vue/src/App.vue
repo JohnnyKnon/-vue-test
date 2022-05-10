@@ -43,6 +43,8 @@
   <main-sub-info></main-sub-info>
   <!-- main intro -->
   <main-intro></main-intro>
+  <!-- main others -->
+  <main-others></main-others>
   <!-- Footer -->
   <footer-webffle></footer-webffle>
 </template>
@@ -52,6 +54,7 @@ import MainSlider from './components/slider-section.vue'
 import FooterWebffle from './components/footer.vue'
 import mainSubInfo from './components/main-subinfo.vue'
 import mainIntro from './components/main-intro.vue'
+import mainOthers from './components/main-otherpages.vue'
 
 export default {
   name: 'App',
@@ -59,7 +62,8 @@ export default {
     MainSlider,
     FooterWebffle,
     mainSubInfo,
-    mainIntro
+    mainIntro,
+    mainOthers
   },
   data() {
     return {
@@ -120,6 +124,11 @@ export default {
     background-color: var(--bg-color) ;
     /* overflow */
     overflow-x: hidden;
+    /* drag block */
+    -webkit-user-select:none;
+    -moz-user-select:none; 
+    -ms-user-select:none;
+    user-select:none;
   }
 
   li{
