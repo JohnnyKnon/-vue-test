@@ -20,16 +20,19 @@
          <ul class="nav-items-wrap">
              <li class="nav-item">
                 <a class="top">Top</a>
-             </li>  
+             </li> 
+             <li class="nav-item">
+                <a class="about">About Us</a>
+             </li>    
              <li class="nav-item">
                 <a class="service">Service</a>
              </li>  
              <li class="nav-item">
-                <a class="contact">Contact Us</a>
-             </li>  
-             <li class="nav-item">
                 <a class="develop">Develop</a>
-             </li>  
+             </li>
+             <li class="nav-item">
+                <a class="contact">Contact Us</a>
+             </li>   
          </ul>
          <span class="nav-copy">Copyright &copy; webffle 2022</span>
          <span class="nav-lang"><a @click="[$i18n.locale ='ko',toggleOnOff()]" >KR</a> / 
@@ -56,6 +59,8 @@ import mainSubInfo from './components/main-subinfo.vue'
 import mainIntro from './components/main-intro.vue'
 import mainOthers from './components/main-otherpages.vue'
 
+
+
 export default {
   name: 'App',
   components: {
@@ -79,6 +84,7 @@ export default {
             this.isToggleActive = false;
         }
     },
+  
   },
 }
 </script>
@@ -143,6 +149,9 @@ export default {
     cursor: pointer;
   }
 
+
+
+    /* nav */
   #nav{
         /* position */
         position: fixed;
