@@ -11,7 +11,7 @@
            <p class="main-intro-description" 
            data-aos="fade-down"
            data-aos-duration="1500"
-           data-aos-delay="300"
+           data-aos-delay="200"
            data-aos-easing="ease-in-out"
            >
                {{ $t('message.mainIntroDescription') }}

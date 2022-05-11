@@ -1,55 +1,58 @@
 <template>
   <!-- Navigation -->
- <nav id="nav">
-     <ul class="nav-box">
-         <li class="toggle" @click="toggleOnOff" :class="{ isToggleActiveBtn: isToggleActive,}">
-            <span class="top"></span>
-            <span class="middle"></span>
-            <span class="bottom"></span>
-         </li>
-         <li id="logo">
-             <h1><a>webffle</a></h1>
-         </li>
-         <li id="members-btn">
-             <a>MEMBERS</a>
-             <i class="fas fa-users"></i>
-         </li>
-     </ul>
-     <div class="darkscreen-off" :class="{isDarkScreenOn: isToggleActive,}"></div>
-     <section class="nav-cotents-wrap" :class="{ isToggleActive: isToggleActive,}">
-         <ul class="nav-items-wrap">
-             <li class="nav-item">
-                <a class="top">Top</a>
-             </li> 
-             <li class="nav-item">
-                <a class="about">About Us</a>
-             </li>    
-             <li class="nav-item">
-                <a class="service">Service</a>
-             </li>  
-             <li class="nav-item">
-                <a class="develop">Develop</a>
-             </li>
-             <li class="nav-item">
-                <a class="contact">Contact Us</a>
-             </li>   
-         </ul>
-         <span class="nav-copy">Copyright &copy; webffle 2022</span>
-         <span class="nav-lang"><a @click="[$i18n.locale ='ko',toggleOnOff()]" >KR</a> / 
-         <a @click="[$i18n.locale ='jp', toggleOnOff()]">JP</a> / 
-         <a @click="[$i18n.locale ='en', toggleOnOff()]">EN</a></span>
-     </section>
-  </nav>
-  <!-- main slider -->
-  <main-slider></main-slider>
-  <!-- main subinfo -->
-  <main-sub-info></main-sub-info>
-  <!-- main intro -->
-  <main-intro></main-intro>
-  <!-- main others -->
-  <main-others></main-others>
-  <!-- Footer -->
-  <footer-webffle></footer-webffle>
+    <nav id="nav">
+        <ul class="nav-box">
+            <li class="toggle" @click="toggleOnOff" :class="{ isToggleActiveBtn: isToggleActive,}">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </li>
+            <li id="logo">
+                <h1><a>webffle</a></h1>
+            </li>
+            <li id="members-btn">
+                <a>MEMBERS</a>
+                <i class="fas fa-users"></i>
+            </li>
+        </ul>
+        <div class="darkscreen-off" :class="{isDarkScreenOn: isToggleActive,}"></div>
+        <section class="nav-cotents-wrap" :class="{ isToggleActive: isToggleActive,}">
+            <ul class="nav-items-wrap">
+                <li class="nav-item">
+                    <a class="top">Top</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="about">About Us</a>
+                </li>    
+                <li class="nav-item">
+                    <a class="service">Service</a>
+                </li>  
+                <li class="nav-item">
+                    <a class="develop">Develop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="contact">Contact Us</a>
+                </li>   
+            </ul>
+            <span class="nav-copy">Copyright &copy; webffle 2022</span>
+            <span class="nav-lang"><a @click="[$i18n.locale ='ko',toggleOnOff()]" >KR</a> / 
+            <a @click="[$i18n.locale ='jp', toggleOnOff()]">JP</a> / 
+            <a @click="[$i18n.locale ='en', toggleOnOff()]">EN</a></span>
+        </section>
+    </nav>
+    <!-- main slider -->
+    <div class="main">
+        <main-slider></main-slider>
+        <!-- main subinfo -->
+        <main-sub-info></main-sub-info>
+        <!-- main intro -->
+        <main-intro></main-intro>
+        <!-- main others -->
+        <main-others></main-others>
+    </div>
+    <!-- Footer -->
+    <footer-webffle></footer-webffle>
+
 </template>
 
 <script>
@@ -137,6 +140,21 @@ export default {
     user-select:none;
   }
 
+  body::-webkit-scrollbar{
+      /* size */
+      width: 5px;
+  }
+  body::-webkit-scrollbar-thumb{
+      /* background */
+      background-color: var(--color-highlight);
+      /* border */
+      border-radius: 10px;
+  }
+   body::-webkit-scrollbar-track{
+      /* background */
+      background-color: var(--color-black);
+  }
+
   li{
     /* list */
     list-style: none;
@@ -148,7 +166,6 @@ export default {
     /* cursor */
     cursor: pointer;
   }
-
 
 
     /* nav */
@@ -438,5 +455,7 @@ export default {
         justify-content: flex-end;
     }
 
+
+   
 
 </style>

@@ -56,6 +56,7 @@ export default {
   height: 100%;
   /* background */
   background: url(../../public/images/slider/BG2.jpg) no-repeat center/cover;
+  background-attachment: fixed;
   /* filter */
   filter: brightness(70%);
 }

@@ -31,6 +31,9 @@
     "mainIntroDescription": "Support education and employment, connect talent, and support companies overseas expansion.",
 
     "mainIntroType": ["Education","Connect to Korea", "Connect to Asia"],
-    "mainIntroTypeDescription": ["Customized coding education services for infants and adults, Anyone.", "HR B2B project linking foreign countries to Korea", "HR B2B business to connect with companies in and out of Asia"]
+    "mainIntroTypeDescription": ["Customized coding education services for infants and adults, Anyone.", "HR B2B project linking foreign countries to Korea", "HR B2B business to connect with companies in and out of Asia"],
+    
+    "othersinfoH2":["Miya design house","JCOMMUNICATION","Webffle WebAgency", "The Guild of Coding Adventurers"],
+    "othersinfoP":["Design company for services such as promotional materials, stickers, etc", "Company for Retail & Printing & Web Development", "Web Agency for Web site creation, hosting, and newsletter services", "Coding Education Community"]
   }
 }
