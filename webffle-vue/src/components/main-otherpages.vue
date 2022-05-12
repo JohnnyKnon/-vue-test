@@ -72,11 +72,15 @@ export default{
 </script>
 
 <style>
+    
 
     #otherpages{
+        /* position */
+        position: relative;
         /* padding */
-        padding: 50px 0;
+        padding: 70px 0;
     }
+
 
     .pages-title{
         /* font */

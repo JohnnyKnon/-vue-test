@@ -21,4 +21,7 @@ createApp(App).use(i18n).component(mainIntro.name, mainIntro)
 import mainOthers from './components/main-otherpages'
 createApp(App).use(i18n).component(mainOthers.name, mainOthers)
 
+import mainAbout from './components/main-about'
+createApp(App).use(i18n).component(mainAbout.name, mainAbout)
+
 createApp(App).use(i18n).mount('#app')

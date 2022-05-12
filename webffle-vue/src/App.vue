@@ -12,26 +12,23 @@
             </li>
             <li id="members-btn">
                 <a>MEMBERS</a>
-                <i class="fas fa-users"></i>
+                <i class="fas fa-users" onclick></i>
             </li>
         </ul>
         <div class="darkscreen-off" :class="{isDarkScreenOn: isToggleActive,}"></div>
         <section class="nav-cotents-wrap" :class="{ isToggleActive: isToggleActive,}">
             <ul class="nav-items-wrap">
                 <li class="nav-item">
-                    <a class="top">Top</a>
-                </li> 
-                <li class="nav-item">
-                    <a class="about">About Us</a>
-                </li>    
-                <li class="nav-item">
-                    <a class="service">Service</a>
+                    <a class="top" onclick>Top</a>
                 </li>  
                 <li class="nav-item">
-                    <a class="develop">Develop</a>
+                    <a class="service" onclick>Service</a>
+                </li>  
+                <li class="nav-item">
+                    <a class="develop" onclick>Develop</a>
                 </li>
                 <li class="nav-item">
-                    <a class="contact">Contact Us</a>
+                    <a class="contact" onclick>Contact Us</a>
                 </li>   
             </ul>
             <span class="nav-copy">Copyright &copy; webffle 2022</span>
@@ -47,6 +44,8 @@
         <main-sub-info></main-sub-info>
         <!-- main intro -->
         <main-intro></main-intro>
+        <!-- main about -->
+        <main-about></main-about>
         <!-- main others -->
         <main-others></main-others>
     </div>
@@ -61,6 +60,7 @@ import FooterWebffle from './components/footer.vue'
 import mainSubInfo from './components/main-subinfo.vue'
 import mainIntro from './components/main-intro.vue'
 import mainOthers from './components/main-otherpages.vue'
+import mainAbout from './components/main-about.vue'
 
 
 
@@ -71,7 +71,8 @@ export default {
     FooterWebffle,
     mainSubInfo,
     mainIntro,
-    mainOthers
+    mainOthers,
+    mainAbout
   },
   data() {
     return {
@@ -110,7 +111,7 @@ export default {
     --main-color: #FF9B00;
     --bg-color: #FFF7ED;
     --scd-bg-color: #DFE0DF;
-    --third-bg-color: #A6A9B0;
+    --third-bg-color: #848484;
     --color-text: #524438;
     --color-highlight: #00D4B5;
     --color-dark-highlight: #009B81;
@@ -126,18 +127,22 @@ export default {
     padding: 0;
     /* box-size */
     box-sizing: border-box;
+
   }
-  
+  html{
+       /* overflow */
+    overflow-x: hidden;
+  }
   body{
     /* background */
     background-color: var(--bg-color) ;
-    /* overflow */
-    overflow-x: hidden;
     /* drag block */
     -webkit-user-select:none;
     -moz-user-select:none; 
     -ms-user-select:none;
     user-select:none;
+    /* overflow */
+    overflow-x: hidden;
   }
 
   body::-webkit-scrollbar{
@@ -277,7 +282,7 @@ export default {
         font-family: var(--font-eng);
         font-size: 0.8rem;
         /* padding */
-        padding: 0 2px;
+        padding: 0 3px;
          /* transition */
         transition: all 250ms ease-in-out;
     }
@@ -294,11 +299,13 @@ export default {
         /* display */
         display: inline-block;
         /* size */
-        width: 0%; height: 2px;
+        width: 0%; height: 1px;
         /* background */
         background-color: var(--color-dark-highlight);
         /* transition */
         transition: all 250ms ease-in-out;
+        /* z-index */
+        z-index: -1;
     }
     /* hover */
     #members-btn:hover, 

@@ -49,6 +49,11 @@
                </section>
            </div>
        </div>
+       <div class="custom-shape-divider-bottom-1652330795">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
+            </svg>
+        </div>
    </section>
 </template>
 
@@ -73,10 +78,14 @@ export default{
 <style>
 
     #main-intro{
+        /* position */
+        position: relative;
         /* padding */
-        padding: 40px 0;
+        padding: 20px 0;
         /* background */
         background-color: var(--scd-bg-color);
+          /* overflow */
+        overflow-x: hidden;
     }
     .main-intro-wrap{
         /* max-width */
@@ -131,7 +140,7 @@ export default{
     .main-intro-type{
         /* padding */
         padding-top: 50px;
-        padding-bottom: 55px;
+        padding-bottom: 150px;
         /* flex */
         display: flex;
         flex-wrap: wrap;
@@ -180,6 +189,26 @@ export default{
          /* padding */
          padding: 0 11px;
      }
+
+    .custom-shape-divider-bottom-1652330795 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+
+    .custom-shape-divider-bottom-1652330795 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 150px;
+    }
+
+    .custom-shape-divider-bottom-1652330795 .shape-fill {
+        fill: #848484;
+    }
 
     
 

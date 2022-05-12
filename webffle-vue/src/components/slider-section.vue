@@ -39,6 +39,7 @@ export default {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  
 }
 
 #main-slider {
@@ -59,6 +60,14 @@ export default {
   background-attachment: fixed;
   /* filter */
   filter: brightness(70%);
+}
+/* Reponsive */
+@media screen and (max-width: 768px) {
+  #main-slider > div{
+    /* background */
+    background-attachment:local;
+  }
+  
 }
 /* main text */
 #main-text {

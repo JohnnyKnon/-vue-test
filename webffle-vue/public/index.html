@@ -18,13 +18,27 @@
       src="https://kit.fontawesome.com/91eb112b1c.js"
       crossorigin="anonymous"
     ></script>
+    <!-- PARTICLES -->
+    <script>
+      window.onload = function () {
+        Particles.init({
+          // selector: '.main-about-bg',
+          color: '#DFE0DF',
+          maxParticles: 150,
+          connectParticles: true,
+        });
+      };
+    </script>
     <title>webffle IT platform</title>
   </head>
   <body>
     <div id="app"></div>
+    <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({ once: true });
     </script>
+    <!-- PARTICLES -->
+    <script src="./js/particles.js-master/dist/particles.min.js"></script>
   </body>
 </html>
