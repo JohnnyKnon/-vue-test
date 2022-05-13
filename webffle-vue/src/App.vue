@@ -99,6 +99,7 @@ export default {
   :root{
     /* font */
     --font-kr: 'Noto Sans KR', sans-serif;
+    --font-jp:  'M PLUS 1p', sans-serif;
     --font-eng: 'Raleway', sans-serif;
     --font-highlight: 'Palette Mosaic', cursive;
     /* weight */
@@ -134,6 +135,8 @@ export default {
     overflow-x: hidden;
   }
   body{
+      /* font */
+      font-family: 'Noto Sans KR', sans-serif,'M PLUS 1p', sans-serif,'Raleway', sans-serif;
     /* background */
     background-color: var(--bg-color) ;
     /* drag block */
