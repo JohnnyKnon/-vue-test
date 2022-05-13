@@ -51,6 +51,12 @@
                         <a href="#">Visit <i class="fas fa-angle-right"></i></a>
                    </div>
                </section>
+               <div class="waffle-img"
+                    data-aos="zoom-in-left"
+                    data-aos-delay="500"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-sine"
+               ></div>
            </div>
        </div>
     </section>
@@ -233,5 +239,14 @@ export default{
      .other-info > a:hover::after{
          /* size */
          width: 120px;
+     }
+
+     .waffle-img{
+         /* size */
+         width: 200px; height: 200px;
+         /* margin */
+         margin: 0 auto;
+         /* background */
+         background: url(../../public/images/svg/waffle.svg);
      }
 </style>
